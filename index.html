@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Encriptador</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="elementos-principales">
+            
+            <header class="contenedor-logo">
+                <div class="logo"></div>
+            </header>
+    
+            <form id="formulario" class="formulario">
+                <div class="contenedor-input">
+                    <textarea id="mensaje" type="text" name="mensaje" class="input-texto" placeholder="Ingrese el texto aquí" rows="6"></textarea>
+                </div>
+    
+                <div>
+                    <div class="advertencia">
+                        <img class="exclamacion" src="img/bi_exclamation-circle-fill.png">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+
+                    <div class="botones">
+                        <button id="encriptar" class="btn-encriptar deshabilitar">Encriptar</button>
+                        <button id="desencriptar" class="btn-desencriptar deshabilitar">Desencriptar</button>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    
+        <div class="contenedor-mensajes">
+    
+            <div class="contenedor-textos">
+    
+                <div id="textos" >
+                    <div class="imagen-textos">
+        
+                    </div>
+                    <div class="mensaje">
+                        <p class="mensaje-texto-uno">Ningún mensaje encontrado</p>
+                        <p class="mensaje-texto-dos">Ingresa el texto que deseas encriptar o desencriptar</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+
+
+
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>
